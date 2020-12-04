@@ -1,27 +1,50 @@
-# Firstapp
+# blog
+This is a standalone application for blog, its formed by Laravel Back-End and Angular Front-End.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.0.
+## Back-End Laravel
 
-## Development server
+1. Move yourself on backend directory
+```
+$ cd blog
+```
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+2. Install all dependencies
+```
+$ composer install
+```
 
-## Code scaffolding
+3. Generate the app key
+```
+$ php artisan key:generate
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+4. Copy `.env.example` to `.env` and edit the file according to your environment
+```
+$ cp .env.example .env
+```
 
-## Build
+5. Run migrations to set up tables into databse and fill them up with initials datas (seed)
+```
+$ php artisan migrate
+```
+6. Start the app on the default port (:8000)
+```
+$ php artisan serve
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Front-End Angular
 
-## Running unit tests
+1. Move yourself on frontend directory
+```
+$ cd blog-frontend
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+2. Install all dependencies
+```
+$ npm install
+```
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+3. Start the app on the default port (:4200)
+```
+$ ng serve
+```
