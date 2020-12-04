@@ -27,7 +27,11 @@ $ cp .env.example .env
 ```
 $ php artisan migrate
 ```
-6. Start the app on the default port (:8000)
+6. Create the branch git
+```
+$ git checkout -b your_last_name
+```
+7. Start the app on the default port (:8000)
 ```
 $ php artisan serve
 ```
@@ -44,7 +48,11 @@ $ cd blog-frontend
 $ npm install
 ```
 
-3. Start the app on the default port (:4200)
+3. Create the branch git
+```
+$ git checkout -b your_last_name
+```
+4. Start the app on the default port (:4200)
 ```
 $ ng serve
 ```
