@@ -1,19 +1,19 @@
 
 
-<router-outlet>
-
-  <body class="hold-transition sidebar-mini layout-fixed">
       <div class="wrapper">
 
           <!-- Navbar -->
-          <app-nav-bar></app-nav-bar>
+            <app-nav-bar></app-nav-bar>
           <!-- /.navbar -->
 
           <!-- Main Sidebar Container -->
-          <app-side-bar></app-side-bar>
+          <aside class="main-sidebar sidebar-dark-primary elevation-4">
+            <app-side-bar></app-side-bar>
+          </aside>
           <!-- /.Main Sidebar Container -->
 
           <!-- content-wrapper -->
           <div class="content-wrapper">
               <router-outlet></router-outlet>
           </div>
+        </div>
